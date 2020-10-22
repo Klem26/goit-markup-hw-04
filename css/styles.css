@@ -12,7 +12,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-bg-color: #f5f4fa;
-  --bg-header-color: #ffffff;
+  --white-color: #ffffff;
   --social-color: #afb1b8;
   --bg-section: #e5e5e5;
 }
@@ -30,7 +30,7 @@ html {
 body {
   margin: 0;
 
-  background-color: #ffffff;
+  background-color: var(--white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
@@ -42,6 +42,8 @@ a {
 /* если нужно пофиксить 4 пикселя зазор */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -59,7 +61,7 @@ img {
 
 /* page hader */
 .page-hader {
-  background-color: var(--bg-header-color);
+  background-color: var(--white-color);
 }
 
 .page-wrap {
@@ -191,6 +193,7 @@ img {
   text-align: center;
 }
 .subject {
+  display: flex;
   max-width: 1600px;
   height: 600px;
   margin-left: 0;
@@ -224,7 +227,7 @@ img {
 /*  btn */
 
 .button {
-  /* display: inline-block; */
+  display: inline-block;
   font-family: Roboto, sans-serif;
   min-width: 73px;
 
@@ -258,7 +261,7 @@ img {
 
   padding: 6px 22px;
 
-  background-color: var(--primary-bg-color);
+  background-color: var(--white-color);
 }
 
 .button.list {
@@ -328,7 +331,7 @@ img {
   height: 120px;
   margin-bottom: 30px;
 
-  background: var(--primary-bg-color);
+  background: var(--white-color);
   border-radius: 4px;
 }
 .antenna {
@@ -441,7 +444,7 @@ img {
 
 /*  our-team */
 .bg-team {
-  background-color: var(--primary-bg-color);
+  background-color: var(--white-color);
 }
 .our-team .title {
   margin-top: 30px;
@@ -481,7 +484,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--bg-header-color);
+  background-color: var(--white-color);
 }
 
 .our-team-element:nth-child(4) {
@@ -524,7 +527,7 @@ img {
   margin: 12px;
 }
 .social-links:hover {
-  fill: #ffffff;
+  fill: var(--white-color);
   background-color: var(--accent-color);
 }
 
@@ -562,7 +565,7 @@ img {
   width: 170px;
   height: 90px;
 
-  background: var(--bg-header-color);
+  background: var(--white-color);
   border: 1px solid var(--social-color);
   border-radius: 4px;
 
@@ -614,7 +617,7 @@ img {
 
 /* для лого */
 .footer-link {
-  color: #ffffff;
+  color: var(--white-color);
   margin-bottom: 20px;
   display: block;
 }
@@ -625,7 +628,7 @@ img {
   line-height: 1.6;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--white-color);
   text-decoration: none;
 
   margin-bottom: 9px;
@@ -660,7 +663,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .social-footer {
@@ -760,7 +763,7 @@ img {
 
 .footer:hover,
 .footer:focus {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .text:hover,
