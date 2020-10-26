@@ -274,6 +274,9 @@ img {
 
   background-color: var(--primary-bg-color);
 }
+.border-bottom {
+  border-bottom: 1px solid #ececec;
+}
 
 .button.list {
   display: flex;
@@ -785,30 +788,9 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* .projects {
-  box-sizing: border-box;
-  border: 1px solid transparent;
-} */
 /* .projects:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-} */
-
-/* .our-work .title:hover,
-.our-work .title:focus,
-.our-work .link:hover,
-.our-work .link:focus {
-  text-decoration: underline;
-
-  color: var(--accent-color);
-} */
-
-/* footer   hover */
-
-/* .footer:hover {
-  color: var(--white-color);
-}
-.footer:focus {
 } */
 
 .address .link:hover {
