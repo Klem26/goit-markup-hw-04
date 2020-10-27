@@ -128,24 +128,19 @@ img {
 .flex-icon {
   display: flex;
   align-items: center;
+  fill: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 .item-envelop {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--primary-text-color);
 }
 
 .item-mobile {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-
-.item-envelop:hover,
-.item-mobile:hover {
-  fill: var(--accent-color);
 }
 
 .header {
@@ -182,12 +177,14 @@ img {
   outline-color: #000000;
 }
 
-.header .link:hover {
+.flex-icon:hover,
+.flex-icon:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.header .link:focus {
+.flex-icon:focus {
+  outline-style: solid;
   outline-color: #000000;
-  color: var(--accent-color);
 }
 
 /* main */
